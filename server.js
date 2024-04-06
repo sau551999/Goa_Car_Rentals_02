@@ -1,3 +1,5 @@
+const path = require('path');
+
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 5000
@@ -7,6 +9,15 @@ app.use(express.json())
 app.use('/api/cars/' , require('./routes/carsRoute'))
 app.use('/api/users/' , require('./routes/usersRoute'))
 app.use('/api/bookings/' , require('./routes/bookingsRoute'))
+
+
+/////*************///////////// 
+
+
+const __dirname1 = path.resolve();
+
+
+////////***********////////////
 
 
 const path = require('path')
